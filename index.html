@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+<div>
+    <form id="registeration-form">
+        <p>First Name</p>
+        <input type="text" id="name" name="name" required minlength="3" maxlength="20">
+        <p>Last Name</p>
+        <input type="text" id="lastName" name="lastName" required minlength="1" maxlength="20">
+        <p>Email</p>
+        <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}">
+        <p>Password</p>
+        <input type="password" id="password" name="password" required minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z]).*$">
+        <p>Confirm Password</p>
+        <input type="password" id="confirmPassword" name="password" required minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z]).*$">
+        <button type="submit" id="register-btn">Sign UP</button>
+    </form>
+
+    <a href="login.html"><button>Login</button></a>
+</div>
+<script type="module" src="script.js"></script>
+</body>
+</html>
